@@ -56,6 +56,7 @@ var checkForMatch = function(){
 }
 var flipCard = function() {
   var cardId = this.getAttribute('data-id');
+  this.removeEventListener();
   console.log("User flipped " + cards[cardId].rank);
   cardsInPlay.push(cards[cardId].rank);
   var set = this.setAttribute('src',cards[cardId].cardImage);
