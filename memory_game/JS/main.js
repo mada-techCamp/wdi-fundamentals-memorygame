@@ -36,7 +36,7 @@ var reset = function(){
  cardsInPlay=[];
  for (var i = 0; i < cards.length; i++) {
    var cardElement = document.getElementsByTagName('img')[i];
-  cardElement.setAttribute('src',"images/back.png");
+  cardElement.setAttribute('src',"https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/back.png?raw=true");
  }
 }
 var Reset = document.getElementById("b");
