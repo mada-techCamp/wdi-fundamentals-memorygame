@@ -3,29 +3,29 @@ var cards = [
 {
 rank: 'queen',
 suit: 'hearts',
-cardImage: "https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/queen-of-hearts.png?raw=true"
+cardImage: "memory_game/images/queen-of-hearts.png?raw=true"
 },
 {
 rank: 'queen',
 suit: 'diamonds',
-cardImage: "https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/queen-of-diamonds.png?raw=true"
+cardImage: "memory_game/images/queen-of-diamonds.png?raw=true"
 },
 {
 rank: 'king',
 suit: 'hearts',
-cardImage: "https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/king-of-hearts.png?raw=true"
+cardImage: "memory_game/images/king-of-hearts.png?raw=true"
 },
 {
 rank: 'king',
 suit: 'diamonds',
-cardImage: "https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/king-of-diamonds.png?raw=true"
+cardImage: "memory_game/images/king-of-diamonds.png?raw=true"
 }
 ];
 var cardsInPlay = [];
 var createBoard = function(){
   for (var i = 0; i < cards.length; i++) {
 var cardElement = document.createElement('img') ;
-cardElement.setAttribute('src',"https://github.com/madaawadh/wdi-fundamentals-memorygame/blob/master/memory_game/images/back.png?raw=true");
+cardElement.setAttribute('src',"memory_game/images/back.png?raw=true");
 cardElement.setAttribute('data-id',i);
 cardElement.addEventListener("click", flipCard);
 document.getElementById("game-board").appendChild(cardElement);
