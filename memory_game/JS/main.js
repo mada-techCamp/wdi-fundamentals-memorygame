@@ -3,7 +3,7 @@ var cards = [
 {
 rank: 'queen',
 suit: 'hearts',
-cardImage: "memory_game/images/queen-of-hearts.png?raw=true"
+cardImage: "./memory_game/images/queen-of-hearts.png?raw=true"
 },
 {
 rank: 'queen',
